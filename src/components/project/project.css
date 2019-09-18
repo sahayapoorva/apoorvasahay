@@ -1,0 +1,18 @@
+.project-container {
+  border-width: 2px;
+  display: flex;
+  flex-flow: column;
+}
+
+.main-container {
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.keyword {
+  margin: 0 10px 0 0;
+}

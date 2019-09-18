@@ -1,0 +1,43 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.header-name {
+    text-align: start;
+}
+
+.header-date {
+    text-align: end;
+}
+
+.list-header {
+    text-align: start;
+}
+
+p {
+    margin: 0px;
+}
+
+@media only screen and (min-width: 1025px) {
+    .App{
+        padding-left: 15em;
+        padding-right: 15em;
+        padding-top: 10em;
+        padding-bottom: 10em;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .header-container {
+        flex-flow: column;
+    }
+    .header-date {
+        text-align: start;
+    }
+}

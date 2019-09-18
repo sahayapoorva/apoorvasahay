@@ -1,0 +1,31 @@
+.profile-image {
+  object-fit: cover;
+  object-position: 0% 0%;
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.social-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.profile-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.avatar-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 700px){
+  .avatar-container {
+    flex-flow: column;
+  }
+}

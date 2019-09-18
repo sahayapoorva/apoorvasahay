@@ -1,0 +1,12 @@
+.school-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.school-name {
+  text-align: start;
+}
+
+.gpa {
+  text-align: start;
+}

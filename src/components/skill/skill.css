@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: space-between;
+}
+
+.name {
+  text-align: start;
+  padding: 0.25rem;
+  margin: 5px 0 5px 0px;
+  border-radius: 5px;
+  color: white;
+  background-color: blue;
+}
+
+.completion {
+  text-align: end;
+  padding: 0.25rem;
+  margin: 5px;
+}

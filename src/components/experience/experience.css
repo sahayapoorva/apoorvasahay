@@ -1,0 +1,17 @@
+.experience-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.experience-content {
+  display: flex;
+  flex-flow: column;
+}
+
+.experience-designation {
+  text-align: left;
+}
+
+.experience-highlight {
+  text-align: start;
+}

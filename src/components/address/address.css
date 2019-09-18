@@ -1,0 +1,13 @@
+.address-container {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  padding: 20px 20px;
+}
+
+@media only screen and (min-width: 701px) {
+  .address-container {
+    padding: 5em;
+    align-self: flex-start;
+  }
+}
