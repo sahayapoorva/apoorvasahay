@@ -4,7 +4,7 @@ import "./projectList.css";
 
 const ProjectList = props => {
   return (
-    <div>
+    <div className="card">
       <header className="list-header">
         <p>List of Projects: </p>
       </header>

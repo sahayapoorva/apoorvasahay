@@ -1,0 +1,11 @@
+.banner-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1025px) {
+    .banner-container h1 {
+        font-size: 5em;
+    }
+}

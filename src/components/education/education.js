@@ -4,13 +4,14 @@ import "./education.css";
 
 const Education = props => {
   return (
-    <div>
+    <div className="card">
       <header className="list-header">
-        <p>Education :</p>
+        <p>Education</p>
       </header>
+      <hr/>
       <main>
-        {props.schools.map(school => (
-          <School {...school} />
+        {props.schools.map((school,index) => (
+            index !== props.schools.length -1?<div><School {...school} /> <hr/></div>:<div className="hr-padding"><School {...school}/></div>
         ))}
       </main>
     </div>

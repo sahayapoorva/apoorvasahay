@@ -4,7 +4,7 @@ import "./skillList.css";
 
 const SkillList = props => {
   return (
-    <div>
+    <div className="card">
       <header className="list-header">
         <p>Skills: </p>
       </header>

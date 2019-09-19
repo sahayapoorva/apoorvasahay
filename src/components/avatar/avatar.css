@@ -19,7 +19,7 @@
 
 .avatar-container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column;
   align-items: center;
   justify-content: space-between;
 }

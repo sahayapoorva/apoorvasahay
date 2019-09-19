@@ -1,6 +1,13 @@
+body {
+    background-color: lightgrey;
+}
+
 .App {
     font-family: sans-serif;
     text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
 }
 
 .header-container {
@@ -18,19 +25,56 @@
 }
 
 .list-header {
-    text-align: start;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 0.5em;
 }
 
 p {
     margin: 0px;
 }
 
+.hr-padding {
+    padding-bottom: 0.5em;
+}
+
+.card {
+    background-color: white;
+    margin: 0.5em;
+    border-radius: 0.2em;
+}
+
+.content-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.container1 {
+    display: flex;
+    flex-flow: column;
+}
+
 @media only screen and (min-width: 1025px) {
     .App{
-        padding-left: 15em;
-        padding-right: 15em;
-        padding-top: 10em;
-        padding-bottom: 10em;
+        padding: 10em 15em;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+    }
+
+    .content-container {
+        padding: 0 5em;
+    }
+
+    .container1 {
+        flex-flow: row;
+    }
+
+    .card {
+        margin: 1.8em 1em;
+    }
+
+    .list-header {
+        font-size: 2em;
     }
 }
 @media only screen and (max-width: 700px) {

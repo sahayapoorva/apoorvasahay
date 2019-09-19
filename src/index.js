@@ -7,6 +7,8 @@ import ProjectList from "./components/projectList/projectList";
 import Education from "./components/education/education";
 import ExperienceList from "./components/experienceList/experienceList";
 import Avatar from "./components/avatar/avatar";
+import Banner from "./components/banner/banner";
+
 
 const skills = [
   {
@@ -87,17 +89,9 @@ const experiences = [
 ];
 
 const avatar = {
-  name: "Apoorva Sahay",
   img: {
     src: "./images/profile.jpg",
     altText: "Apoorva Sahay"
-  },
-  address: {
-    address1: "12440 Alameda Trace Circle",
-    address2: "Apt #1824",
-    city: "Austin",
-    state: "Texas",
-    zip: "78727"
   },
   socials: [
     {
@@ -117,14 +111,31 @@ const avatar = {
   ]
 };
 
+const header = {
+  name: "Apoorva Sahay",
+  phonenumber: "+1-(469)-720-1570",
+  address: {
+    address1: "12440 Alameda Trace Circle",
+    address2: "Apt #1824",
+    city: "Austin",
+    state: "Texas",
+    zip: "78727"
+  }
+}
+
 function App() {
   return (
     <div className="App">
       <Avatar {...avatar} />
-      <SkillList skills={skills} />
-      <ExperienceList experiences={experiences} />
-      <Education schools={schools} />
-      <ProjectList projects={projects} />
+      <div className="content-container">
+        <Banner {...header} />
+        <div className="container1">
+          <Education schools={schools} />
+          <SkillList skills={skills} />
+        </div>
+        <ExperienceList experiences={experiences} />
+        <ProjectList projects={projects} />
+      </div>
     </div>
   );
 }

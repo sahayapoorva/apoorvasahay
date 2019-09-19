@@ -3,7 +3,7 @@ import Experience from "../experience/experience";
 
 const ExperienceList = props => {
   return (
-    <div>
+    <div className="card">
       <header className="list-header">
         <p>Experience :</p>
       </header>
