@@ -1,17 +1,15 @@
 import React from "react";
 import Skill from "../skill/skill";
+import Card from "../card/Card";
 import "./skillList.css";
 
 const SkillList = props => {
   return (
-    <div className="card">
-      <header className="list-header">
-        <p>Skills: </p>
-      </header>
-      {props.skills.map(skill => (
-        <Skill name={skill.name} completion={skill.percentage} />
-      ))}
-    </div>
+    <Card cardName="Skills">
+        {props.skills.map(skill => (
+            <Skill name={skill.name} completion={skill.percentage} />
+        ))}
+    </Card>
   );
 };
 

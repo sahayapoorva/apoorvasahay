@@ -121,7 +121,7 @@ const header = {
     state: "Texas",
     zip: "78727"
   }
-}
+};
 
 function App() {
   return (
@@ -130,7 +130,7 @@ function App() {
       <div className="content-container">
         <Banner {...header} />
         <div className="container1">
-          <Education schools={schools} />
+          <Education grow={3} schools={schools} />
           <SkillList skills={skills} />
         </div>
         <ExperienceList experiences={experiences} />

@@ -21,7 +21,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: space-between;
+  padding: 2em;
 }
 
 @media only screen and (max-width: 700px){

@@ -1,18 +1,14 @@
 import React from "react";
 import Experience from "../experience/experience";
+import Card from '../card/Card'
 
 const ExperienceList = props => {
   return (
-    <div className="card">
-      <header className="list-header">
-        <p>Experience :</p>
-      </header>
-      <main>
+    <Card cardName="Experience">
         {props.experiences.map(experience => (
           <Experience {...experience} />
         ))}
-      </main>
-    </div>
+    </Card>
   );
 };
 
