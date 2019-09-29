@@ -7,7 +7,10 @@ const ProjectList = props => {
   return (
         <Card cardName="Projects">
             {props.projects.map((project, index) => (
-              <Project key={index} {...project} />
+              <div>
+                  <Project key={index} {...project} />
+                  {index + 1 !== props.projects.length?<div className="seperator"/>:null}
+              </div>
             ))}
         </Card>
   );

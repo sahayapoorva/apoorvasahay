@@ -3,18 +3,18 @@ import "./school.css";
 
 const School = props => {
   return (
-    <div>
+    <div className="container-padding">
       <header className="header-container">
-        <p className="header-name">{props.degree}</p>
-        <p className="header-date">
+        <h2 className="header-name">{props.degree}</h2>
+        <h2 className="header-date">
           {props.startDate}-{props.endDate}
-        </p>
+        </h2>
       </header>
       <main className="school-name">
-        <p>{props.schoolName}</p>
+        {props.schoolName}
       </main>
       <footer className="gpa">
-        <p>{props.gpa}</p>
+        {props.gpa}
       </footer>
     </div>
   );

@@ -1,9 +1,3 @@
-.project-container {
-  border-width: 2px;
-  display: flex;
-  flex-flow: column;
-}
-
 .main-container {
   text-align: left;
 }

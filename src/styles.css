@@ -1,10 +1,9 @@
 body {
-    background-color: lightgrey;
     margin: 0;
+    font-family: 'Poppins','Playfair Display','Merriweather', serif;
 }
 
 .App {
-    font-family: sans-serif;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -14,14 +13,21 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
+}
+
+.banner-container h1 {
+    margin: 0;
 }
 
 .header-name {
     text-align: start;
+    font-size: 1.4em;
 }
 
 .header-date {
     text-align: end;
+    font-size: 1em;
 }
 
 .content-container {
@@ -33,6 +39,11 @@ body {
     display: flex;
     flex-flow: column;
 }
+
+.container-padding {
+    padding: 0.4em;
+}
+
 
 .flexGrow1 {
     flex-grow: 1;

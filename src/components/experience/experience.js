@@ -3,19 +3,19 @@ import "./experience.css";
 
 const Experience = props => {
   return (
-    <div className="experience-container">
+    <div className="container-padding">
       <header className="header-container">
-        <p className="header-name">
+        <h2 className="header-name">
           {props.name}, {props.location}
-        </p>
-        <p className="header-date">
+        </h2>
+        <h2 className="header-date">
           {props.startDate} - {props.endDate}
-        </p>
+        </h2>
       </header>
       <main className="experience-content">
         <p className="experience-designation">{props.designation}</p>
         <ul>
-          {props.highlights.map(highlight => (
+          {props.highlights.map((highlight, index) => (
             <li className="experience-highlight">{highlight}</li>
           ))}
         </ul>

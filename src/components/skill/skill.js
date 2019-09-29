@@ -3,7 +3,7 @@ import "./skill.css";
 
 const Skill = props => {
   return (
-    <div className="container">
+    <div className="container-padding">
       <div className="name" style={{ flexBasis: props.completion }}>
         {props.name}
       </div>

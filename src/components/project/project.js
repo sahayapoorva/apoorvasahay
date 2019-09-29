@@ -3,21 +3,21 @@ import "./project.css";
 
 const Project = props => {
   return (
-    <div className="project-container">
+    <div className="container-padding">
       <header className="header-container">
-        <p className="header-name">{props.name}</p>
-        <p className="header-date">
+        <h2 className="header-name">{props.name}</h2>
+        <h2 className="header-date">
           {props.startDate}-{props.endDate}
-        </p>
+        </h2>
       </header>
       <main className="main-container">
-        <p>{props.description}</p>
+        {props.description}
       </main>
       <footer className="footer-container">
         {props.keyWords.map((keyword, index) => (
-          <p key={index} className="keyword">
+          <div key={index} className="keyword">
             {keyword}
-          </p>
+          </div>
         ))}
       </footer>
     </div>
