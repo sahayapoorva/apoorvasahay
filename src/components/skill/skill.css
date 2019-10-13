@@ -1,20 +1,25 @@
-.container {
+.skillContainer {
   display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+  flex-direction: row;
+  margin: 1em;
+}
+
+.fillContainer {
+  width: 90%;
+}
+
+.fill {
+  background-color: red;
+  height: 100%;
+  border-radius: 5px;
+  text-align: left;
 }
 
 .name {
-  text-align: start;
-  padding: 0.25rem;
-  margin: 5px 0 5px 0px;
-  border-radius: 5px;
-  color: white;
-  background-color: blue;
+  padding: 1px;
 }
 
-.completion {
-  text-align: end;
-  padding: 0.25rem;
-  margin: 5px;
+.value {
+  width: 10%;
+  text-align: right;
 }

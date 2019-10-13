@@ -7,7 +7,7 @@ const SkillList = props => {
   return (
     <Card cardName="Skills">
         {props.skills.map(skill => (
-            <Skill name={skill.name} completion={skill.percentage} />
+            <Skill name={skill.name} value={skill.percentage} />
         ))}
     </Card>
   );

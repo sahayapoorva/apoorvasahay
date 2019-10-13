@@ -1,13 +1,23 @@
 import React from "react";
-import "./skill.css";
+import { useSpring, animated } from "react-spring";
+
+import './skill.css';
 
 const Skill = props => {
+  const computedWidth = useSpring({
+    width: props.value,
+    from: {
+      width: "0%"
+    }
+  });
   return (
-    <div className="container-padding">
-      <div className="name" style={{ flexBasis: props.completion }}>
-        {props.name}
+    <div className="skillContainer">
+      <div className="fillContainer">
+        <animated.div className="fill" style={computedWidth}>
+          <div className="name">{props.name}</div>
+        </animated.div>
       </div>
-      <div className="completion">{props.completion}</div>
+      <div className="value">{props.value}</div>
     </div>
   );
 };

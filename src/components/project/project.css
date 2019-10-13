@@ -9,4 +9,7 @@
 
 .keyword {
   margin: 0 10px 0 0;
+  background-color: red;
+  padding: 5px;
+  border-radius: 5px;
 }
