@@ -1,51 +1,156 @@
+/*
+  Typography and colours follow the reading style of Increment (increment.com):
+  serif body text, sans-serif headings and UI, light grey page, blue links.
+  Fonts are Source Serif 4 and Inter, set up in astro.config.mjs.
+ */
+
 :root {
-  --color-bg: #fbfaf7;
-  --color-text: #1d1d1f;
-  --color-muted: #5f6368;
-  --color-accent: #2f6fdb;
-  --measure: 65ch;
-  --gutter: 16px;
+	--accent: #4c70b1;
+	--black: 0, 0, 0;
+	--gray: 118, 118, 118;
+	--gray-light: 204, 204, 204;
+	--gray-dark: 0, 0, 0;
+	--bg: #f2f2f2;
+	--gray-gradient: #f2f2f2, #f2f2f2;
+	--box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    --color-bg: #111214;
-    --color-text: #e8e8ea;
-    --color-muted: #9aa0a6;
-    --color-accent: #8ab4f8;
-  }
-}
-
-:root[data-theme='dark'] {
-  --color-bg: #111214;
-  --color-text: #e8e8ea;
-  --color-muted: #9aa0a6;
-  --color-accent: #8ab4f8;
-}
-
 body {
-  margin: 0;
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
-  line-height: 1.6;
+	font-family: var(--font-serif), Georgia, serif;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	background: var(--bg);
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	color: rgb(var(--gray-dark));
+	font-size: 18px;
+	line-height: 1.75;
+	-webkit-font-smoothing: antialiased;
+}
+main {
+	width: 1100px;
+	max-width: calc(100% - 2em);
+	margin: auto;
+	padding: 3em 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-sans), system-ui, sans-serif;
+	margin: 0 0 0.5rem 0;
+	color: rgb(var(--black));
+	line-height: 1.2;
+	letter-spacing: -0.015em;
+}
+h1 {
+	font-size: 2.25em;
+	font-weight: 600;
+}
+h2 {
+	font-size: 1.875em;
+	font-weight: 400;
+}
+h3 {
+	font-size: 1.2em;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+h4 {
+	font-size: 1.25em;
+	font-weight: 500;
+}
+h5 {
+	font-size: 1em;
+	font-weight: 600;
+}
+strong,
+b {
+	font-weight: 600;
+	font-family: var(--font-sans), system-ui, sans-serif;
+	letter-spacing: -0.007em;
+}
+a {
+	color: var(--accent);
+}
+a:hover {
+	color: var(--accent);
+}
+p {
+	margin-bottom: 1em;
+}
+.prose p {
+	margin-bottom: 1.25em;
+}
+textarea {
+	width: 100%;
+	font-size: 16px;
+}
+input {
+	font-size: 16px;
+}
+table {
+	width: 100%;
+	font-family: var(--font-sans), system-ui, sans-serif;
+	font-size: 0.85em;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+code {
+	padding: 2px 5px;
+	background-color: rgb(var(--gray-light));
+	border-radius: 2px;
+	font-size: 0.9em;
+}
+pre {
+	padding: 20px 30px;
+	border-radius: 0;
+	background: #fff;
+	font-size: 0.9em;
+	line-height: 1.65;
+}
+pre > code {
+	all: unset;
+}
+blockquote {
+	border-left: 4px solid var(--accent);
+	padding: 0 0 0 20px;
+	margin: 0;
+	font-size: 1.2em;
+}
+hr {
+	border: none;
+	border-top: 1px solid rgb(var(--gray-light));
+}
+@media (max-width: 720px) {
+	body {
+		font-size: 16px;
+	}
+	main {
+		padding: 1em;
+	}
 }
 
-.site-header,
-main,
-.site-footer {
-  max-width: var(--measure);
-  margin: 0 auto;
-  padding: 1.5rem var(--gutter);
-}
-
-.site-name {
-  color: var(--color-text);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.site-footer {
-  color: var(--color-muted);
-  font-size: 0.875rem;
+.sr-only {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+	clip: rect(1px 1px 1px 1px);
+	/* maybe deprecated but we need to support legacy browsers */
+	clip: rect(1px, 1px, 1px, 1px);
+	/* modern browsers, clip-path works inwards from each corner */
+	clip-path: inset(50%);
+	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
+	white-space: nowrap;
 }
