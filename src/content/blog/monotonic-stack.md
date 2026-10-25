@@ -185,4 +185,3 @@ A practice ladder, from the template itself to harder twists:
 | 11 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | histogram per row | reduce a grid to histograms |
 | 12 | [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/) | next greater-or-equal plus pops | count pops and the blocker |
 
-Step-through visualizations: [Daily Temperatures](https://claude.ai/artifact/2wBgQAFc9gGh8pPKEarST2), [Next Greater Element II](https://claude.ai/artifact/Rs6kqtHS28URusyFgniwGy) and [Largest Rectangle in Histogram](https://claude.ai/artifact/8rRwhJEHsYfUiZ86DvatAw). The stack problem set PDF has 57 problems with hints and solutions.
