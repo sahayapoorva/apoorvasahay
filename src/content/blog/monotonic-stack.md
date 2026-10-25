@@ -2,7 +2,7 @@
 title: 'The Monotonic Stack: A Practical Guide'
 description: 'How a monotonic stack finds the next greater or smaller element in one O(n) pass, with three worked LeetCode examples.'
 pubDate: 2026-10-24
-draft: true
+draft: false
 ---
 
 A monotonic stack finds, for every element, the nearest element on its left or right that is bigger or smaller, in one O(n) pass. It is a normal stack with one rule: before pushing, pop everything that would break the sorted order.
