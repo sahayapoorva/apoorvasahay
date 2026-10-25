@@ -61,4 +61,4 @@ Posts with `draft: true` show in `npm run dev` only and are left out of the buil
 - `src/layouts/BlogPost.astro`: post page layout
 - `src/styles/global.css`: global styles
 - `src/consts.ts`: site title and description
-- `public/`: static files copied as-is (favicon)
+- `public/`: static files copied as-is (`robots.txt`)
